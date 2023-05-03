@@ -1,0 +1,56 @@
+#content {
+    padding: 50px;
+}
+/* The twenty-fourth rule targets the form element 
+and uses flexbox properties to center 
+its contents vertically and horizontally and aligns its items in a column. */
+#form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#contactus {
+  color: #1392a3;
+}
+
+#map {
+  color: #1392a3;
+}
+
+form {
+  color: #1392a3;
+}
+/* The twenty-third rule targets the 
+label, select, input[type="text"], 
+input[type="checkbox"], input[type="email"],
+textarea, and input[type="radio"] elements 
+within the form and sets their display property to block and adds margin to them. */
+
+#form label,
+#form select,
+#form input[type="text"],
+#form input[type="checkbox"],
+#form input[type="email"],
+#form textarea,
+#form input[type="radio"] {
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+#form option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+ 
+
+
+#about {
+  color: #1392a3;
+}
+
+

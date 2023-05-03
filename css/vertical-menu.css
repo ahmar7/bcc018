@@ -1,0 +1,75 @@
+.vertical-menu {
+  background-color: #1392a3;
+}
+.vertical-menu h4 {
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.side-navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #1392a3;
+}
+/* The eighth rule targets the elements with a 
+class of "dropdown" and sets their display property to 
+inline, and adds an overflow property. */
+.vertical-menu .dropdown {
+  float: left;
+  overflow: hidden;
+} /* The eleventh rule targets the 
+dropdown-content element and sets its
+display property to none, its background color,
+and its position property to absolute. 
+It also adds box-shadow and z-index properties. */
+
+.vertical-menu .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1392a3;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+/* The twelfth rule targets the anchor tags 
+within the dropdown-content and removes
+their float property, adds padding and removes the underline. */
+.vertical-menu .dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* The seventh rule targets the anchor tags within
+   the navbar and sets their font size to 16px, 
+   font color to white, adds padding and removes the underline. */
+.vertical-menu .side-navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.side-navbar a:hover {
+  background-color: #ff7f50;
+}
+
+
+
+.side-navbar a:hover {
+  background-color: #ff7f50;
+}
+/* The fourteenth rule adds a hover effect
+to the dropdown-content element when
+its parent element, the dropdown, is hovered. */
+.vertical-menu  .dropdown:hover .dropdown-content {
+  display: block;
+}

@@ -1,0 +1,85 @@
+/* The sixth rule targets the element
+with a class of "navbar" and uses flexbox properties 
+to center its contents horizontally,
+sets the background color to #1392a3 and
+adds an overflow property. */
+.navbar {
+  background-color: #1392a3;
+}.nav-active{
+    background-color: #ff7f50;
+}
+.nav-inner {
+  max-width: 1200px !important;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin: 0 auto;
+}
+.navbar a {
+  width: 100%;
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar .dropdown {
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.navbar .dropdown .dropbtn {
+  font-size: 14px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar .dropdown-content {
+  display: none;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-color: #1392a3;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 9;
+}
+.navbar .dropdown-content a {
+  width: -webkit-fill-available;
+}
+/* The thirteenth rule adds a hover effect 
+to the anchor tags within the dropdown-content. */
+.navbar .dropdown-content a:hover {
+  background-color: #ff7f50;
+}
+
+/* The fourteenth rule adds a hover effect
+to the dropdown-content element when
+its parent element, the dropdown, is hovered. */
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+/* The sixteenth rule targets the element with 
+an ID of "content" and adds padding to it. */
+#content {
+  padding: 50px;
+}
+/* The tenth rule adds a
+hover effect to the anchor tags 
+within the navbar and the dropbtn 
+element within the dropdown. */
+
+.navbar a:hover {
+  background-color: #ff7f50;
+}
+
+.dropdown:hover  {
+  background-color: #ff7f50;
+}

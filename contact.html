@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House R Us</title> 
+     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/horizontal-menu.css">
+    <link rel="stylesheet" href="./css/vertical-menu.css">
+    <link rel="stylesheet" href="./css/modal-box.css">
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="page-heading"> House R Us<h1>
+    </header>
+      <div class=" navbar">
+     <div class="nav-inner">
+        <a href="index.html"> Home</a>
+            <div class="dropdown">
+            <button class="dropbtn">Detached
+            </button>
+            <div class="dropdown-content">
+                <a title="Properties in Uxbridge" href="pages/Detached/Uxbridge.html">Uxbridge</a>
+                <a title="Properties in Camden" href="pages/Detached/camden.html">Camden</a>
+                
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Semi Detached
+            </button>
+            <div class="dropdown-content">
+                <a title="Properties in Uxbridge" href="pages/Semi-detached/Uxbridge.html">Uxbridge</a>
+                <a title="Properties in Camden" href="pages/Semi-detached/camden.html">Camden</a>
+            </div>
+        </div>
+       
+        <div class="dropdown">
+            <button class="dropbtn">Flat
+            </button>
+            <div class="dropdown-content">
+                <a title="Properties in Uxbridge" href="pages/Flat/Uxbridge.html">Uxbridge</a>
+                <a title="Properties in Camden" href="pages/Flat/camden.html">Camden</a>
+            </div>
+        </div>
+        <a class="nav-active" href="contact.html">Contact</a>
+    </div>
+   </div>
+    <div id="banner">
+        <h1 class="banner-heading">Contact page</h1>
+        <img alt="." src="image/banner 3.png" class="banner-img" />
+    </div>
+    <main>
+        <div id="left"  class="vertical-menu">
+           <h4>Area Filters</h4>
+            <nav>
+                <div class="side-navbar">
+                   <div class="dropdown">
+            <button class="dropbtn">Detached
+            </button>
+            <div class="dropdown-content">
+                <a title="Properties in Uxbridge" href="pages/Detached/Uxbridge.html">Uxbridge</a>
+                <a title="Properties in Camden" href="pages/Detached/camden.html">Camden</a>
+                <a title="Properties in " href="pages/Detached/.html"></a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Semi Detached
+            </button>
+            <div class="dropdown-content">
+                <a title="Properties in Uxbridge" href="pages/Semi-detached/Uxbridge.html">Uxbridge</a>
+                <a title="Properties in Camden" href="pages/Semi-detached/camden.html">Camden</a>
+                <a title="Properties in " href="pages/Semi-detached/.html"></a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Terraced
+            </button>
+            <div class="dropdown-content">
+                <a title="Properties in Uxbridge" href="pages/Terraced/Uxbridge.html">Uxbridge</a>
+                <a title="Properties in Camden" href="pages/Terraced/camden.html">Camden</a>
+                <a title="Properties in " href="pages/Terraced/.html"></a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Bungalow
+            </button>
+            <div class="dropdown-content">
+                <a title="Properties in Uxbridge" href="pages/Bungalow/Uxbridge.html">Uxbridge</a>
+                <a title="Properties in Camden" href="pages/Bungalow/camden.html">Camden</a>
+                <a title="Properties in " href="pages/Bungalow/.html"></a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Flat
+            </button>
+            <div class="dropdown-content">
+                <a title="Properties in Uxbridge" href="pages/Flat/Uxbridge.html">Uxbridge</a>
+                <a title="Properties in Camden" href="pages/Flat/camden.html">Camden</a>
+                <a title="Properties in " href="pages/Flat/.html"></a>
+            </div>
+        </div>
+
+                </div>
+            </nav>
+        </div>
+        <div id="right">
+
+            <div id="content">
+                <div id="form">
+                    <form action="mailto:armirani97@gmail.com" method="post" name="messageme"
+                        onsubmit="return myformValidator(event)">
+                        <label for="title">Title:</label>
+                        <select name="Title" id="title" required>
+                            <option value="">--Please choose Your Title--</option>
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Miss">Miss</option>
+                            <option value="Ms">Ms</option>
+                        </select><br>
+
+                        <label for="name">Your name:</label>
+                        <input id="name" type="text" required /><br>
+
+                        <label for="update">Type Of Enquiry:</label>
+                        <br>
+                        <label for="update">Update</label>
+                        <input type="checkbox" id="update" name="update">
+                        <label for="complaint">Complaint</label>
+                        <input type="checkbox" id="complaint" name="complaint">
+                        <label for="advice">Advice</label>
+                        <input type="checkbox" id="advice" name="advice">
+
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" required /><br>
+
+                        <label for="messageBox">Message:</label>
+                        <textarea id="messageBox" required></textarea><br>
+
+                        <label>Accept Terms & Conditions</label>
+
+                        <label for="">Yes</label>
+                        <input type="radio" name="terms" value="yes" required />
+                        <label for="">No</label>
+                        <input type="radio" name="terms" value="no" />
+                        <br>
+                        <input type="submit" value="Send message">
+                    </form>
+                    <br>
+                    <br>
+                    <div id="contactus">
+
+                        <p>Tel: 07513531989</p><br>
+                        <p>Email: Houses.co.uk</p><br>
+                        <h5>Address: West London</h5>
+                    </div>
+                </div>
+
+                <div id="map">
+                    <br>
+                    <h4 style="text-align:center"> Find US</h4>
+                    <br>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19853.3723168043!2d-0.4815766044070332!3d51.53758404049084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876692cd5d16dc9%3A0x51248770eaf8cf05!2sUxbridge!5e0!3m2!1sen!2suk!4v1641388009963!5m2!1sen!2suk"" width="
+                        100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+                <div id="about">
+                    <br>
+                    <h3>About us </h3>
+                    <br>
+                    <p>
+                        Company started in 1920,About us: We are a team of real estate experts dedicated to helping you
+                        find
+                        your dream home.
+                        About us: Our website offers a wide selection of properties for sale and for rent.
+                        About us: We strive to provide you with a seamless and stress-free property search experience.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+    </main>
+    <footer>
+
+        <h5>&copy; House R Us</h5>
+    </footer>
+    <script src="myvalidator.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,322 @@
+/* The first rule applies to all elements and
+sets the margin and padding to 0,
+which is a common practice to avoid 
+ inconsistencies across different browsers. */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* The second rule targets the
+body element and sets the font
+ family to Arial, Helvetica, sans-serif. */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The third rule targets the header
+element and uses flexbox properties to 
+center its contents vertically and horizontally, 
+and adds top and bottom padding. */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* The fourth rule targets the h1 element
+within the header and sets the font 
+color to #1392a3, font size to 17px and text align to center. */
+header h1 {
+  color: #1392a3;
+  font-size: 17px;
+  text-align: center;
+}
+
+/* The fifth rule targets the h1 element within the
+element with an ID of "banner" and 
+sets the font color to #1392a3, 
+adds top and bottom padding 
+and aligns the text to center. */
+#banner h1 {
+  color: #1392a3;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* The sixth rule targets the element
+with a class of "navbar" and uses flexbox properties 
+to center its contents horizontally,
+sets the background color to #1392a3 and
+adds an overflow property. */
+.navbar {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #1392a3;
+}
+.side-navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #1392a3;
+}
+
+/* The seventh rule targets the anchor tags within
+   the navbar and sets their font size to 16px, 
+   font color to white, adds padding and removes the underline. */
+.navbar a,
+.side-navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The eighth rule targets the elements with a 
+class of "dropdown" and sets their display property to 
+inline, and adds an overflow property. */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* The ninth rule targets the element 
+with a class of "dropbtn" within the 
+dropdown element and sets its font size,
+color, padding, and background color. */
+.dropdown .dropbtn {
+  font-size: 14px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* The tenth rule adds a
+hover effect to the anchor tags 
+within the navbar and the dropbtn 
+element within the dropdown. */
+
+.navbar a:hover,
+.side-navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #ff7f50;
+}
+
+/* The eleventh rule targets the 
+dropdown-content element and sets its
+display property to none, its background color,
+and its position property to absolute. 
+It also adds box-shadow and z-index properties. */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #1392a3;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* The twelfth rule targets the anchor tags 
+within the dropdown-content and removes
+their float property, adds padding and removes the underline. */
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* The thirteenth rule adds a hover effect 
+to the anchor tags within the dropdown-content. */
+.dropdown-content a:hover {
+  background-color: #ff7f50;
+}
+
+/* The fourteenth rule adds a hover effect
+to the dropdown-content element when
+its parent element, the dropdown, is hovered. */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* The fifteenth rule targets the element
+with a class of "house-cards" and sets its
+display property to flex, flex-wrap to wrap,
+ and justifies its contents around the center. */
+.house-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* The sixteenth rule targets the element with 
+an ID of "content" and adds padding to it. */
+#content {
+  padding: 50px;
+}
+
+/* The seventeenth rule targets the element 
+with a class of "house-card" and sets its width,
+margin, border, and border radius properties,
+and adds an overflow property. */
+.house-card {
+  width: 400px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* The eighteenth rule targets the image
+within the house-card element and sets 
+its width, height, and object-fit properties. */
+.house-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* The nineteenth rule targets the element
+with a class of "house-info" and adds padding to it. */
+.house-info {
+  padding: 20px;
+}
+
+/* The twentieth rule targets the h3 element
+within the house-info element and removes its margin property. */
+.house-info h3 {
+  margin: 0;
+}
+
+/* The twenty-first rule targets the p elements within the house-info element 
+and adds margin and font-size properties. */
+.house-info p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+/* The twenty-second rule targets 
+the footer element and sets its color, height, background color,
+and uses flexbox properties to center its contents. */
+footer {
+  color: white;
+  height: 40px;
+  background-color: #1392a3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The twenty-third rule targets the 
+label, select, input[type="text"], 
+input[type="checkbox"], input[type="email"],
+textarea, and input[type="radio"] elements 
+within the form and sets their display property to block and adds margin to them. */
+
+#form label,
+#form select,
+#form input[type="text"],
+#form input[type="checkbox"],
+#form input[type="email"],
+#form textarea,
+#form input[type="radio"] {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* The twenty-fourth rule targets the form element 
+and uses flexbox properties to center 
+its contents vertically and horizontally and aligns its items in a column. */
+#form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contactus {
+  color: #1392a3;
+}
+
+#map {
+  color: #1392a3;
+}
+
+form {
+  color: #1392a3;
+}
+
+#about {
+  color: #1392a3;
+}
+
+main {
+  display: flex;
+}
+#left {
+  background-color: #1392a3;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+h4 {
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.margin-for-side-bar {
+  margin-left: 7%;
+  margin-top: -5%;
+}

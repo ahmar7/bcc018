@@ -1,0 +1,72 @@
+/* The fourth rule targets the h1 element
+within the header and sets the font 
+color to #1392a3, font size to 17px and text align to center. */
+.page-heading {
+  font-size: 400%;
+  color: #1392a3; 
+  text-align: center;
+}
+.banner {
+  display: block;
+}
+/* The fifth rule targets the h1 element within the
+element with an ID of "banner" and 
+sets the font color to #1392a3, 
+adds top and bottom padding 
+and aligns the text to center. */
+.banner-heading {
+  font-size: 250%;
+  color: #1392a3;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.banner-img {
+  width: 100%;
+}
+#left {
+  background-color: #1392a3;
+}
+#right {
+  width: inherit;
+  text-align: center;
+}
+main {
+  display: flex;
+}
+/* The twenty-second rule targets 
+the footer element and sets its color, height, background color,
+and uses flexbox properties to center its contents. */
+footer {
+  color: white;
+  height: 40px;
+  background-color: #1392a3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer h5 {
+  display: block;
+  font-size: 0.83em;
+  margin-block-start: 1.67em;
+  margin-block-end: 1.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+/* The ninth rule targets the element 
+with a class of "dropbtn" within the 
+dropdown element and sets its font size,
+color, padding, and background color. */
+.dropdown .dropbtn {
+  font-size: 14px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}

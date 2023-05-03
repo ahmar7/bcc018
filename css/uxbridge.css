@@ -1,0 +1,58 @@
+/* The sixteenth rule targets the element with 
+an ID of "content" and adds padding to it. */
+#content {
+  padding: 50px;
+}
+/* The fifteenth rule targets the element
+with a class of "house-cards" and sets its
+display property to flex, flex-wrap to wrap,
+ and justifies its contents around the center. */
+.house-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* The seventeenth rule targets the element 
+with a class of "house-card" and sets its width,
+margin, border, and border radius properties,
+and adds an overflow property. */
+.house-card {
+   width: 400px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+/* The eighteenth rule targets the image
+within the house-card element and sets 
+its width, height, and object-fit properties. */
+.house-card img {
+   width: 100%;
+  border: 1px solid black;
+  padding: 3px;
+  width: -webkit-fill-available;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* The nineteenth rule targets the element
+with a class of "house-info" and adds padding to it. */
+.house-info {
+   padding: 20px;
+  border: 1px solid black;
+}
+
+/* The twentieth rule targets the h3 element
+within the house-info element and removes its margin property. */
+.house-info h3 {
+  margin: 0;
+}
+
+/* The twenty-first rule targets the p elements within the house-info element 
+and adds margin and font-size properties. */
+.house-info p {
+  margin: 5px 0;
+  font-size: 14px;
+}
