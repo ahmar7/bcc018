@@ -31,7 +31,8 @@ header {
   margin-right: auto;
 }
 .slideshow-width {
-  width: 1280px;
+      margin: 0 50px;
+    width: fit-content; 
   max-height: 80vh;
   overflow: hidden;
   display: flex;
